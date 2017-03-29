@@ -14,6 +14,7 @@
 		383C60741E8BAA4E00DB7597 /* SepecTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 383C60721E8BAA4E00DB7597 /* SepecTest.xcdatamodeld */; };
 		383C60761E8BAA4E00DB7597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383C60751E8BAA4E00DB7597 /* Assets.xcassets */; };
 		383C60791E8BAA4E00DB7597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383C60771E8BAA4E00DB7597 /* LaunchScreen.storyboard */; };
+		383C60831E8BB06D00DB7597 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 383C60821E8BB06D00DB7597 /* TableViewCell.m */; };
 		A1214382800EDB8452531BBC /* libPods-SepecTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2945BD5FBB25A076E26724F7 /* libPods-SepecTest.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		383C60751E8BAA4E00DB7597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		383C60781E8BAA4E00DB7597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		383C607A1E8BAA4E00DB7597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		383C60811E8BB06D00DB7597 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		383C60821E8BB06D00DB7597 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		7925F80D9947626E2D2639AB /* Pods-SepecTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SepecTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SepecTest/Pods-SepecTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DA2D3E980AC8CDE79B95006C /* Pods-SepecTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SepecTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SepecTest/Pods-SepecTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +70,7 @@
 		383C60651E8BAA4E00DB7597 /* SepecTest */ = {
 			isa = PBXGroup;
 			children = (
+				383C60801E8BB06400DB7597 /* Classes */,
 				383C60691E8BAA4E00DB7597 /* AppDelegate.h */,
 				383C606A1E8BAA4E00DB7597 /* AppDelegate.m */,
 				383C606C1E8BAA4E00DB7597 /* ViewController.h */,
@@ -87,6 +91,15 @@
 				383C60671E8BAA4E00DB7597 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		383C60801E8BB06400DB7597 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				383C60811E8BB06D00DB7597 /* TableViewCell.h */,
+				383C60821E8BB06D00DB7597 /* TableViewCell.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		55083B20C152E216B08ADB61 /* Pods */ = {
@@ -231,6 +244,7 @@
 				383C606E1E8BAA4E00DB7597 /* ViewController.m in Sources */,
 				383C606B1E8BAA4E00DB7597 /* AppDelegate.m in Sources */,
 				383C60741E8BAA4E00DB7597 /* SepecTest.xcdatamodeld in Sources */,
+				383C60831E8BB06D00DB7597 /* TableViewCell.m in Sources */,
 				383C60681E8BAA4E00DB7597 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +404,7 @@
 				383C607F1E8BAA4E00DB7597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
