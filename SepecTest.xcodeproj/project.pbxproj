@@ -14,9 +14,11 @@
 		383C60741E8BAA4E00DB7597 /* SepecTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 383C60721E8BAA4E00DB7597 /* SepecTest.xcdatamodeld */; };
 		383C60761E8BAA4E00DB7597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383C60751E8BAA4E00DB7597 /* Assets.xcassets */; };
 		383C60791E8BAA4E00DB7597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383C60771E8BAA4E00DB7597 /* LaunchScreen.storyboard */; };
+		A1214382800EDB8452531BBC /* libPods-SepecTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2945BD5FBB25A076E26724F7 /* libPods-SepecTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2945BD5FBB25A076E26724F7 /* libPods-SepecTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SepecTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		383C60631E8BAA4E00DB7597 /* SepecTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SepecTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		383C60671E8BAA4E00DB7597 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		383C60691E8BAA4E00DB7597 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		383C60751E8BAA4E00DB7597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		383C60781E8BAA4E00DB7597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		383C607A1E8BAA4E00DB7597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7925F80D9947626E2D2639AB /* Pods-SepecTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SepecTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SepecTest/Pods-SepecTest.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2D3E980AC8CDE79B95006C /* Pods-SepecTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SepecTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SepecTest/Pods-SepecTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1214382800EDB8452531BBC /* libPods-SepecTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				383C60651E8BAA4E00DB7597 /* SepecTest */,
 				383C60641E8BAA4E00DB7597 /* Products */,
+				55083B20C152E216B08ADB61 /* Pods */,
+				DC76C93483C90A504B8ACA5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +89,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		55083B20C152E216B08ADB61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7925F80D9947626E2D2639AB /* Pods-SepecTest.debug.xcconfig */,
+				DA2D3E980AC8CDE79B95006C /* Pods-SepecTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC76C93483C90A504B8ACA5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2945BD5FBB25A076E26724F7 /* libPods-SepecTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 383C607D1E8BAA4E00DB7597 /* Build configuration list for PBXNativeTarget "SepecTest" */;
 			buildPhases = (
+				ECF0891BB2D8B748BFB52C17 /* [CP] Check Pods Manifest.lock */,
 				383C605F1E8BAA4E00DB7597 /* Sources */,
 				383C60601E8BAA4E00DB7597 /* Frameworks */,
 				383C60611E8BAA4E00DB7597 /* Resources */,
+				AF2AE648B99F8A2DEB7E1E5C /* [CP] Embed Pods Frameworks */,
+				C0A753A948061DDFD886541E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,6 +174,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF2AE648B99F8A2DEB7E1E5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SepecTest/Pods-SepecTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0A753A948061DDFD886541E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SepecTest/Pods-SepecTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF0891BB2D8B748BFB52C17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		383C605F1E8BAA4E00DB7597 /* Sources */ = {
@@ -274,6 +349,7 @@
 		};
 		383C607E1E8BAA4E00DB7597 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7925F80D9947626E2D2639AB /* Pods-SepecTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SepecTest/Info.plist;
@@ -285,6 +361,7 @@
 		};
 		383C607F1E8BAA4E00DB7597 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2D3E980AC8CDE79B95006C /* Pods-SepecTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SepecTest/Info.plist;
